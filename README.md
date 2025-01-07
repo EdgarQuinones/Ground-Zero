@@ -1,6 +1,6 @@
 # Ground Zero, by Hack Shack Studios
 
-![Game Banner](Images\HackShack_Banner_V1.png)
+![Game Banner](https://github.com/EdgarQuinones/Ground-Zero/blob/main/Images/HackShack_Banner_V1.png)
 
 Ground Zero is an exciting new video game where players survive waves of enemies in a 3D, wave-based game. It features multiple weapons, a shop system, and is designed for those interested in suriving as long as you can, with different playstyles.
 
