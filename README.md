@@ -18,7 +18,7 @@ Watch the gameplay video here:
 
 You can download the executable here:
 
-- [Download [Game Name] for Windows](https://hack-shack-studios.itch.io/ground-zero)
+- [Download Ground Zero for Windows](https://hack-shack-studios.itch.io/ground-zero)
 
 ## 🤖 Technologies Used
 
