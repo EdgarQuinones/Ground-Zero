@@ -25,7 +25,3 @@ You can download the executable here:
 - Godot
 - Blender
 - Illustrator 
-
-## 📄 License
-
-This project is proprietary. The executable is available for download, but the source code is private.
