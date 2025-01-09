@@ -12,7 +12,7 @@ The biggest twist of our game that makes it different from the rest is that when
 
 Watch the gameplay video here:
 
-[![Game Video]](Images and Videos\Gameplay.mkv)
+[![Game Video](https://youtu.be/6oPpJZYi0E4)
 
 ## 🏃‍♂️ Download the Game
 
