@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=4 uid="uid://b7llwi74x4vd5"]
+[gd_scene format=4 uid="uid://b7llwi74x4vd5"]
 
 [ext_resource type="PackedScene" uid="uid://bhwwhlr4dtvb0" path="res://Merge Assets/Map/Forge Enhanced (Purple) (only tower) (only colors).blend" id="1_b215s"]
 [ext_resource type="Texture2D" uid="uid://c32u6nsmomjgj" path="res://Merge Assets/Map/Alien_Text_Colors_ForgePurple.png" id="2_hnh70"]
