@@ -20,7 +20,7 @@ var gravity = 9.8
 var player: CharacterBody3D
 var forge = null
 
-@onready var walk_sound = $MedusaBotWalk
+@onready var walk_sound = $"../../MedusaBotWalk"
 
 
 func enter():

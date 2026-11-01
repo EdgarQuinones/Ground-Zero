@@ -59,7 +59,6 @@ var enemy_kills = 0:
 
 func _ready() -> void:
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
-	get_viewport().size = DisplayServer.screen_get_size()
 	result_text.visible = false
 	randomize()
 	player = get_node(player_path)

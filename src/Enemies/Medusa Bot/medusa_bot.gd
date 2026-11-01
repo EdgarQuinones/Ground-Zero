@@ -78,6 +78,7 @@ func _on_elimination_enemy_death() -> void:
 			forge.robots_hacking -= 1
 
 		if weapon_drops:
+			@warning_ignore("shadowed_variable", "confusable_local_usage")
 			var medusa_head = medusa_head.instantiate()
 			medusa_head.position = position
 			medusa_head.position.y += .5
