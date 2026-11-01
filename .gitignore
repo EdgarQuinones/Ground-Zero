@@ -1,0 +1,33 @@
+
+# Godot 4 - Generated files
+.godot/
+.import/
+.nomedia
+*.translation
+*.tmp
+
+# Godot .NET / C#
+.mono/
+data_*/
+mono_crash.*.json
+~*.dll
+
+# Exported builds
+/Builds/
+/build/
+/exports/
+/Web/
+
+# IDE files
+.vs/
+.idea/
+.vscode/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+Desktop.ini
+*~
+
+# Godot legacy export config
+export.cfg
