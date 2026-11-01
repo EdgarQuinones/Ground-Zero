@@ -17,6 +17,7 @@ mono_crash.*.json
 /build/
 /exports/
 /Web/
+src/Builds/
 
 # IDE files
 .vs/
