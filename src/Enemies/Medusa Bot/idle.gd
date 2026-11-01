@@ -12,7 +12,7 @@ const ATTACK_RANGE := 5.0
 
 @export var move_speed := 2.0
 @export var player_path = "/root/World/Map/Player"
-@export var forge_path := "/root/World/Map/NavigationRegion3D/Forge"
+@export var forge_path := "/root/World/Map/Forge"
 @export var animation: AnimationPlayer
 
 var gravity = 9.8

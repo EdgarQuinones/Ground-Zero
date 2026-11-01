@@ -1,11 +1,11 @@
-[gd_scene load_steps=26 format=3 uid="uid://b2xr28r77qiug"]
+[gd_scene format=3 uid="uid://b2xr28r77qiug"]
 
-[ext_resource type="Script" path="res://Levels/Pre-Alpha/pre_alpha.gd" id="1_1b5qn"]
+[ext_resource type="Script" uid="uid://cyg424w1dsvle" path="res://Levels/Pre-Alpha/pre_alpha.gd" id="1_1b5qn"]
 [ext_resource type="PackedScene" uid="uid://daxcj2wau0q4c" path="res://UI/pause_menu.tscn" id="2_bo550"]
-[ext_resource type="Script" path="res://UI/forge_health_bar.gd" id="2_reldq"]
+[ext_resource type="Script" uid="uid://dxaype71kx2nf" path="res://UI/forge_health_bar.gd" id="2_reldq"]
 [ext_resource type="PackedScene" uid="uid://orvopfwdvrfy" path="res://Player/player.tscn" id="4_usip7"]
 [ext_resource type="FontFile" uid="uid://rerjonsav62n" path="res://Other/Fonts/Epyval.ttf" id="5_p2toc"]
-[ext_resource type="Script" path="res://UI/total_score_board.gd" id="6_qvoby"]
+[ext_resource type="Script" uid="uid://cycyx42qng6g5" path="res://UI/total_score_board.gd" id="6_qvoby"]
 [ext_resource type="PackedScene" uid="uid://cg4c6dv1hfpjw" path="res://Merge Assets/From other project/world_environment.tscn" id="9_da84c"]
 [ext_resource type="PackedScene" uid="uid://c50ipxmc8vfys" path="res://Merge Assets/Forge/forge.tscn" id="9_u53oa"]
 [ext_resource type="PackedScene" uid="uid://b3ecukkmu1kt3" path="res://Merge Assets/Map/Updated Scenes/TerrainOnly.tscn" id="9_vbnsh"]
@@ -70,15 +70,15 @@ sky_material = SubResource("PanoramaSkyMaterial_jl0vt")
 background_mode = 2
 sky = SubResource("Sky_fowsc")
 
-[node name="World" type="Node3D"]
+[node name="World" type="Node3D" unique_id=577939959]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.162144, -0.0722611, 0.146532)
 script = ExtResource("1_1b5qn")
 
-[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1294573872]
 transform = Transform3D(0.999961, 0.00854213, 0.00178454, 0, -0.204496, 0.978867, 0.00872653, -0.978831, -0.204488, 0, 0, 0)
 shadow_enabled = true
 
-[node name="UI" type="Control" parent="."]
+[node name="UI" type="Control" parent="." unique_id=2102893067]
 layout_mode = 3
 anchors_preset = 0
 offset_left = 1266.0
@@ -87,7 +87,7 @@ offset_right = 1306.0
 offset_bottom = 32.0
 mouse_filter = 1
 
-[node name="RegenRect" type="ColorRect" parent="UI"]
+[node name="RegenRect" type="ColorRect" parent="UI" unique_id=1260360796]
 visible = false
 layout_mode = 0
 offset_right = 3412.0
@@ -95,7 +95,7 @@ offset_bottom = 2283.0
 mouse_filter = 2
 color = Color(0.17139, 0.642574, 0.231583, 0.231373)
 
-[node name="OldHealthBar" type="TextEdit" parent="UI"]
+[node name="OldHealthBar" type="TextEdit" parent="UI" unique_id=612137815]
 visible = false
 layout_mode = 0
 offset_left = -1161.0
@@ -104,18 +104,18 @@ offset_right = -1062.0
 offset_bottom = 1070.0
 text = "Health: 6/6"
 
-[node name="Regen" type="Timer" parent="UI"]
+[node name="Regen" type="Timer" parent="UI" unique_id=767079521]
 wait_time = 5.0
 one_shot = true
 
-[node name="Debug Menu" type="TextEdit" parent="UI"]
+[node name="Debug Menu" type="TextEdit" parent="UI" unique_id=1038702622]
 visible = false
-layout_direction = 1
 layout_mode = 1
 offset_left = 49.0
 offset_top = 8.0
 offset_right = 361.0
 offset_bottom = 202.0
+layout_direction = 1
 text = "Debug Menu:
 1. Restart Scene
 2. Max Health 
@@ -123,7 +123,7 @@ text = "Debug Menu:
 4. Regen Health
 5. Forge Lose 1 HP"
 
-[node name="win_lose_text" type="TextEdit" parent="UI"]
+[node name="win_lose_text" type="TextEdit" parent="UI" unique_id=1854444222]
 visible = false
 layout_mode = 0
 offset_left = -391.0
@@ -132,9 +132,9 @@ offset_right = -312.0
 offset_bottom = 533.0
 text = "You Win!"
 
-[node name="CanvasLayer" type="CanvasLayer" parent="UI"]
+[node name="CanvasLayer" type="CanvasLayer" parent="UI" unique_id=731644816]
 
-[node name="HealthBarControl" type="Control" parent="UI/CanvasLayer"]
+[node name="HealthBarControl" type="Control" parent="UI/CanvasLayer" unique_id=43024715]
 layout_mode = 3
 anchors_preset = 2
 anchor_top = 1.0
@@ -145,7 +145,7 @@ offset_right = 446.0
 offset_bottom = -41.0
 grow_vertical = 0
 
-[node name="HealthBar" type="ProgressBar" parent="UI/CanvasLayer/HealthBarControl"]
+[node name="HealthBar" type="ProgressBar" parent="UI/CanvasLayer/HealthBarControl" unique_id=1362841592]
 visible = false
 layout_mode = 0
 offset_top = 1.0
@@ -156,14 +156,14 @@ max_value = 6.0
 step = 1.0
 show_percentage = false
 
-[node name="ForgeHealthBarControl" type="Control" parent="UI/CanvasLayer"]
+[node name="ForgeHealthBarControl" type="Control" parent="UI/CanvasLayer" unique_id=489005099]
 layout_mode = 3
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
 grow_horizontal = 2
 
-[node name="ForgeHealthBar" type="ProgressBar" parent="UI/CanvasLayer/ForgeHealthBarControl"]
+[node name="ForgeHealthBar" type="ProgressBar" parent="UI/CanvasLayer/ForgeHealthBarControl" unique_id=1480892951]
 z_index = 1
 layout_mode = 0
 offset_left = -600.0
@@ -178,7 +178,7 @@ value = 5.0
 show_percentage = false
 script = ExtResource("2_reldq")
 
-[node name="ForgeSecondaryBar" type="ProgressBar" parent="UI/CanvasLayer/ForgeHealthBarControl/ForgeHealthBar"]
+[node name="ForgeSecondaryBar" type="ProgressBar" parent="UI/CanvasLayer/ForgeHealthBarControl/ForgeHealthBar" unique_id=1005324183]
 z_index = -1
 layout_mode = 1
 anchors_preset = 15
@@ -193,20 +193,20 @@ max_value = 30.0
 value = 30.0
 show_percentage = false
 
-[node name="decay_timer" type="Timer" parent="UI/CanvasLayer/ForgeHealthBarControl/ForgeHealthBar"]
+[node name="decay_timer" type="Timer" parent="UI/CanvasLayer/ForgeHealthBarControl/ForgeHealthBar" unique_id=348810771]
 wait_time = 0.4
 one_shot = true
 
-[node name="stun_timer" type="Timer" parent="UI/CanvasLayer/ForgeHealthBarControl/ForgeHealthBar"]
+[node name="stun_timer" type="Timer" parent="UI/CanvasLayer/ForgeHealthBarControl/ForgeHealthBar" unique_id=442404175]
 one_shot = true
 
-[node name="VersionControl" type="Control" parent="UI/CanvasLayer"]
+[node name="VersionControl" type="Control" parent="UI/CanvasLayer" unique_id=1726818170]
 layout_mode = 3
 anchors_preset = 0
 offset_right = 96.0
 offset_bottom = 37.0
 
-[node name="Version" type="TextEdit" parent="UI/CanvasLayer/VersionControl"]
+[node name="Version" type="TextEdit" parent="UI/CanvasLayer/VersionControl" unique_id=1167848932]
 layout_mode = 0
 offset_left = 9.0
 offset_top = 2.0
@@ -219,7 +219,7 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_g8qus")
 text = "Pre-Alpha
 "
 
-[node name="LogControl" type="Control" parent="UI/CanvasLayer"]
+[node name="LogControl" type="Control" parent="UI/CanvasLayer" unique_id=1746448876]
 visible = false
 layout_mode = 3
 anchors_preset = 1
@@ -229,7 +229,7 @@ offset_left = -293.0
 offset_bottom = 646.0
 grow_horizontal = 0
 
-[node name="ConsoleLog" type="TextEdit" parent="UI/CanvasLayer/LogControl"]
+[node name="ConsoleLog" type="TextEdit" parent="UI/CanvasLayer/LogControl" unique_id=241050527]
 layout_mode = 0
 offset_left = 3.0
 offset_top = 1.0
@@ -238,7 +238,7 @@ offset_bottom = 649.0
 text = "Log:
 "
 
-[node name="WaveCountControl" type="Control" parent="UI/CanvasLayer"]
+[node name="WaveCountControl" type="Control" parent="UI/CanvasLayer" unique_id=672870089]
 visible = false
 layout_mode = 3
 anchors_preset = 5
@@ -250,7 +250,7 @@ offset_right = -714.0
 offset_bottom = 382.0
 grow_horizontal = 2
 
-[node name="WaveInfo" type="TextEdit" parent="UI/CanvasLayer/WaveCountControl"]
+[node name="WaveInfo" type="TextEdit" parent="UI/CanvasLayer/WaveCountControl" unique_id=250565082]
 layout_mode = 1
 anchors_preset = -1
 anchor_right = 0.2
@@ -261,7 +261,7 @@ offset_bottom = 55.0
 text = "Waves Remaining: 5
 Enemies: 0"
 
-[node name="WaveTimerText" type="TextEdit" parent="UI/CanvasLayer/WaveCountControl"]
+[node name="WaveTimerText" type="TextEdit" parent="UI/CanvasLayer/WaveCountControl" unique_id=1867559558]
 layout_mode = 0
 offset_left = -7.0
 offset_top = 76.0
@@ -269,7 +269,7 @@ offset_right = 215.0
 offset_bottom = 120.0
 text = "10 seconds until next wave"
 
-[node name="ColorRect" type="ColorRect" parent="UI"]
+[node name="ColorRect" type="ColorRect" parent="UI" unique_id=1290378161]
 visible = false
 layout_mode = 0
 offset_left = -1263.0
@@ -279,7 +279,7 @@ offset_bottom = 1094.0
 mouse_filter = 2
 color = Color(1, 0.0392157, 0.145098, 0.231373)
 
-[node name="PauseMenu" parent="UI" instance=ExtResource("2_bo550")]
+[node name="PauseMenu" parent="UI" unique_id=1514382023 instance=ExtResource("2_bo550")]
 visible = false
 layout_mode = 1
 offset_left = -508.0
@@ -288,7 +288,7 @@ offset_right = -402.0
 offset_bottom = 418.0
 scale = Vector2(3, 3)
 
-[node name="Panel" type="Panel" parent="UI"]
+[node name="Panel" type="Panel" parent="UI" unique_id=309449097]
 layout_mode = 1
 anchors_preset = 2
 anchor_top = 1.0
@@ -301,7 +301,7 @@ grow_vertical = 0
 scale = Vector2(4.2909, 2.39102)
 theme_override_styles/panel = SubResource("StyleBoxFlat_bpmmg")
 
-[node name="scoreboard" type="VBoxContainer" parent="UI"]
+[node name="scoreboard" type="VBoxContainer" parent="UI" unique_id=1742408848]
 layout_mode = 1
 anchors_preset = 2
 anchor_top = 1.0
@@ -315,7 +315,7 @@ scale = Vector2(1.52121, 1.45337)
 size_flags_horizontal = 0
 mouse_filter = 2
 
-[node name="header" type="Label" parent="UI/scoreboard"]
+[node name="header" type="Label" parent="UI/scoreboard" unique_id=1906342926]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("5_p2toc")
 theme_override_font_sizes/font_size = 50
@@ -323,7 +323,7 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_m45dw")
 text = "SCOREBOARD"
 horizontal_alignment = 1
 
-[node name="total_score" type="Label" parent="UI/scoreboard"]
+[node name="total_score" type="Label" parent="UI/scoreboard" unique_id=467717287]
 layout_mode = 2
 theme_override_colors/font_color = Color(1, 1, 0, 1)
 theme_override_fonts/font = ExtResource("5_p2toc")
@@ -332,7 +332,7 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_472va")
 text = "SCORE: [Number here]"
 script = ExtResource("6_qvoby")
 
-[node name="info" type="Label" parent="UI/scoreboard"]
+[node name="info" type="Label" parent="UI/scoreboard" unique_id=685134724]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("5_p2toc")
 theme_override_font_sizes/font_size = 20
@@ -340,31 +340,31 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_weefp")
 text = "+50 (Kills)
 -150 (Deaths)"
 
-[node name="EnemySpawnTimer" type="Timer" parent="."]
+[node name="EnemySpawnTimer" type="Timer" parent="." unique_id=489851698]
 wait_time = 30.0
 one_shot = true
 
-[node name="Map" type="Node3D" parent="."]
+[node name="Map" type="Node3D" parent="." unique_id=1756019522]
 
-[node name="Player" parent="Map" instance=ExtResource("4_usip7")]
+[node name="Player" parent="Map" unique_id=16565005 instance=ExtResource("4_usip7")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 28.8781)
 
-[node name="NavigationRegion3D" type="NavigationRegion3D" parent="Map"]
+[node name="NavigationRegion3D" type="NavigationRegion3D" parent="Map" unique_id=502035697]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.32212)
 navigation_mesh = SubResource("NavigationMesh_yycwc")
 
-[node name="Map 1 (Canyon)" parent="Map/NavigationRegion3D" instance=ExtResource("9_vbnsh")]
+[node name="Map 1 (Canyon)" parent="Map/NavigationRegion3D" unique_id=1253465533 instance=ExtResource("9_vbnsh")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.714, -3.837, 9.615)
 
-[node name="Forge" parent="Map" instance=ExtResource("9_u53oa")]
+[node name="Forge" parent="Map" unique_id=1960003747 instance=ExtResource("9_u53oa")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.32212)
 
-[node name="Spawnables" type="Node3D" parent="."]
+[node name="Spawnables" type="Node3D" parent="." unique_id=8007141]
 
-[node name="WorldEnvironment" parent="." instance=ExtResource("9_da84c")]
+[node name="WorldEnvironment" parent="." unique_id=1014155551 instance=ExtResource("9_da84c")]
 environment = SubResource("Environment_io1ei")
 
-[node name="Spawns" parent="." instance=ExtResource("10_rre6o")]
+[node name="Spawns" parent="." unique_id=1554274292 instance=ExtResource("10_rre6o")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.16347, 0.332639, 12.9155)
 
 [node name="Spawn1" parent="Spawns" index="0"]
@@ -386,31 +386,31 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20.3745, 1.67792, 43.3087)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.0079, 0.48881, 37.4796)
 visible = true
 
-[node name="Spawn7" type="Node3D" parent="Spawns"]
+[node name="Spawn7" type="Node3D" parent="Spawns" unique_id=595774868]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -53.4167, 6.01712, 13.4114)
 
-[node name="Spawn8" type="Node3D" parent="Spawns"]
+[node name="Spawn8" type="Node3D" parent="Spawns" unique_id=364846257]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -53.4167, 3.44452, -7.9767)
 
-[node name="Spawn9" type="Node3D" parent="Spawns"]
+[node name="Spawn9" type="Node3D" parent="Spawns" unique_id=1102082989]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23.7737, 7.02383, -73.6056)
 
-[node name="Spawn11" type="Node3D" parent="Spawns"]
+[node name="Spawn11" type="Node3D" parent="Spawns" unique_id=303035362]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.41795, 0.410342, -77.9125)
 
-[node name="Spawn12" type="Node3D" parent="Spawns"]
+[node name="Spawn12" type="Node3D" parent="Spawns" unique_id=532666172]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.5863, 0.556215, -70.3303)
 
-[node name="Spawn13" type="Node3D" parent="Spawns"]
+[node name="Spawn13" type="Node3D" parent="Spawns" unique_id=109595759]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.36333, 0.425656, -57.9743)
 
-[node name="Spawn14" type="Node3D" parent="Spawns"]
+[node name="Spawn14" type="Node3D" parent="Spawns" unique_id=1525824040]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.061, 0.425656, -52.9743)
 
-[node name="Spawn15" type="Node3D" parent="Spawns"]
+[node name="Spawn15" type="Node3D" parent="Spawns" unique_id=1468120538]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.4544, 1.30659, 43.3087)
 
-[node name="EnemiesRemaining" type="Node3D" parent="."]
+[node name="EnemiesRemaining" type="Node3D" parent="." unique_id=1985169693]
 
 [connection signal="wave_finished" from="." to="Map/Player" method="_on_world_wave_finished"]
 [connection signal="win_condition" from="." to="." method="_on_win_condition"]

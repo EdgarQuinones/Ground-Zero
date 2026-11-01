@@ -32,7 +32,7 @@ var nav_map_ready: bool = false
 
 @onready var chasing_player_timer = $"../../ChasingPlayerTimer"
 
-@onready var walk_sound = $MedusaBotWalk
+@onready var walk_sound = $"../../MedusaBotWalk"
 
 func enter():
 	player = get_node(player_path)

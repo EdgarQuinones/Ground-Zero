@@ -14,7 +14,7 @@ const EXPLODE_DURATION := 1.5
 @export var enemy: CharacterBody3D
 
 
-@export var forge_path := "/root/World/Map/NavigationRegion3D/Forge"
+@export var forge_path := "/root/World/Map/Forge"
 
 var forge = StaticBody3D
 
