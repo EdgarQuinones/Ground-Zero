@@ -52,7 +52,6 @@ func _on_skip_button_pressed() -> void:
 "
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_xaoxa"]
-load_path = "res://.godot/imported/HackShack_FinalLogo_ForgePurple.png-6718a94c74e9b1a8b775e148c4e1225a.ctex"
 
 [node name="splash_screen" type="Control" unique_id=122042538 node_paths=PackedStringArray("logo_texture")]
 layout_mode = 3
