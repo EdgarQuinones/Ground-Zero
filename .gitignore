@@ -1,16 +1,13 @@
 
-# Godot 4 - Generated files
+# Godot generated files
 .godot/
 .import/
-.nomedia
-*.translation
-*.tmp
 
-# Godot .NET / C#
-.mono/
-data_*/
-mono_crash.*.json
-~*.dll
+# Temporary and backup files
+*.tmp
+*.orig
+*.bak
+*~
 
 # Exported builds
 /Builds/
@@ -19,16 +16,17 @@ mono_crash.*.json
 /Web/
 src/Builds/
 
-# IDE files
+# Source archives not needed at runtime
+src/Merge Assets/From other project/MainMenuAnimations.zip
+
+# Large alternate menu media - only if unused
+# src/Merge Assets/From other project/MainMenu.gif
+# src/Merge Assets/From other project/MainMenu.mp4
+
+# IDE and OS files
 .vs/
 .idea/
 .vscode/
-
-# Operating system files
 .DS_Store
 Thumbs.db
 Desktop.ini
-*~
-
-# Godot legacy export config
-export.cfg
