@@ -1,8 +1,7 @@
-[gd_scene load_steps=7 format=3 uid="uid://djcn1lbkgioy3"]
+[gd_scene format=3 uid="uid://djcn1lbkgioy3"]
 
-[ext_resource type="Script" path="res://UI/credits.gd" id="1_yp8d5"]
+[ext_resource type="Script" uid="uid://c6jv302hhe65l" path="res://UI/credits.gd" id="1_yp8d5"]
 [ext_resource type="Texture2D" uid="uid://byxogsybw301e" path="res://Other/Images/forge.png" id="2_8udr3"]
-[ext_resource type="FontFile" uid="uid://rerjonsav62n" path="res://Other/Fonts/Epyval.ttf" id="3_2730k"]
 [ext_resource type="PackedScene" uid="uid://dgma4wftrs6nl" path="res://UI/menu_video.tscn" id="4_e41i8"]
 
 [sub_resource type="SystemFont" id="SystemFont_4wqm4"]
@@ -11,7 +10,7 @@ font_names = PackedStringArray("Agency FB")
 [sub_resource type="SystemFont" id="SystemFont_k3w06"]
 font_names = PackedStringArray("Agency FB")
 
-[node name="Credits" type="Control"]
+[node name="Credits" type="Control" unique_id=338479531]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -20,7 +19,7 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_yp8d5")
 
-[node name="Background" type="TextureRect" parent="."]
+[node name="Background" type="TextureRect" parent="." unique_id=2014104906]
 visible = false
 layout_mode = 1
 anchors_preset = 15
@@ -30,7 +29,7 @@ grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("2_8udr3")
 
-[node name="Button Manager" type="MarginContainer" parent="."]
+[node name="Button Manager" type="MarginContainer" parent="." unique_id=1822093640]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -42,16 +41,16 @@ theme_override_constants/margin_top = 12
 theme_override_constants/margin_right = 12
 theme_override_constants/margin_bottom = 12
 
-[node name="HBoxContainer" type="HBoxContainer" parent="Button Manager"]
+[node name="HBoxContainer" type="HBoxContainer" parent="Button Manager" unique_id=353507919]
 layout_mode = 2
 
-[node name="VBoxContainer" type="VBoxContainer" parent="Button Manager/HBoxContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="Button Manager/HBoxContainer" unique_id=1173455254]
 layout_mode = 2
 size_flags_horizontal = 0
 theme_override_constants/separation = 18
 alignment = 2
 
-[node name="Back" type="Button" parent="Button Manager/HBoxContainer/VBoxContainer"]
+[node name="Back" type="Button" parent="Button Manager/HBoxContainer/VBoxContainer" unique_id=324490128]
 custom_minimum_size = Vector2(600, 50)
 layout_mode = 2
 theme_override_colors/font_color = Color(0.623529, 0.247059, 0.909804, 1)
@@ -60,7 +59,7 @@ theme_override_font_sizes/font_size = 64
 text = "BACK"
 alignment = 0
 
-[node name="Title" type="Label" parent="."]
+[node name="Title" type="Label" parent="." unique_id=215370173]
 layout_mode = 1
 offset_left = 379.0
 offset_top = -3.0
@@ -73,14 +72,14 @@ theme_override_fonts/font = SubResource("SystemFont_k3w06")
 theme_override_font_sizes/font_size = 128
 text = "Credits"
 
-[node name="Text" type="Control" parent="."]
+[node name="Text" type="Control" parent="." unique_id=1527993211]
 anchors_preset = 0
 offset_left = 156.0
 offset_top = 164.0
 offset_right = 196.0
 offset_bottom = 204.0
 
-[node name="Text2" type="RichTextLabel" parent="Text"]
+[node name="Text2" type="RichTextLabel" parent="Text" unique_id=129967134]
 layout_mode = 0
 offset_left = 130.0
 offset_top = 4.0
@@ -102,30 +101,7 @@ Lead Composer: Bud Bajalia
 Marketing Lead: Emily Delaere
 DevOps Engineer: Daniel Hiromoto "
 
-[node name="Follow Us" type="LinkButton" parent="."]
-layout_mode = 1
-anchors_preset = 6
-anchor_left = 1.0
-anchor_top = 0.5
-anchor_right = 1.0
-anchor_bottom = 0.5
-offset_left = -412.0
-offset_top = -538.0
-offset_right = -15.0
-offset_bottom = -411.0
-grow_horizontal = 0
-grow_vertical = 2
-theme_override_colors/font_color = Color(0.623529, 0.247059, 0.909804, 1)
-theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
-theme_override_constants/outline_size = 2
-theme_override_constants/underline_spacing = 0
-theme_override_fonts/font = ExtResource("3_2730k")
-theme_override_font_sizes/font_size = 100
-text = "Follow Us!"
-underline = 1
-uri = "https://linktr.ee/HackShackStudios"
-
-[node name="MenuVideo" parent="." instance=ExtResource("4_e41i8")]
+[node name="MenuVideo" parent="." unique_id=1304144637 instance=ExtResource("4_e41i8")]
 show_behind_parent = true
 y_sort_enabled = true
 layout_mode = 1

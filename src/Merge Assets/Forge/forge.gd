@@ -125,7 +125,7 @@ const DOUBLE_HEALTH_PRICE: int = 350
 @onready var double_points_timer = get_node("ShopUI/Timers/DoublePoints")
 
 ## Buttons
-@onready var speed_button = get_node("Menu/Buffs/Speed")
+@onready var speed_button = $ShopUI/Menu/Buffs/Speed
 @onready var damage_reduction_button = get_node("ShopUI/Menu/Buffs/DamageReduction")
 @onready var infinite_ammo_button = get_node("ShopUI/Menu/Buffs/InfiniteAmmo")
 @onready var double_points_button = get_node("ShopUI/Menu/Buffs/DoublePoints")
@@ -135,7 +135,7 @@ const DOUBLE_HEALTH_PRICE: int = 350
 var green := Color("DARK_GREEN")
 var red := Color("DARK_RED")
 
-@onready var score_label = get_node("../../../UI/scoreboard")
+#@onready var score_label = get_node("../../../UI/scoreboard")
 
 func _on_speed_pressed() -> void:
 	# speed_boost.emit()

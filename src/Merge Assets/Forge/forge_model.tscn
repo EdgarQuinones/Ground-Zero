@@ -44,11 +44,11 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_hbtkj")
 
-[node name="Forge" instance=ExtResource("1_b215s")]
+[node name="Forge" unique_id=476945721 instance=ExtResource("1_b215s")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.74851, -5.00458, 8.04353)
 
-[node name="Cube_003" parent="." index="2"]
-visible = false
-
-[node name="Alien Text_383" parent="." index="5"]
+[node name="Alien Text_383" parent="." index="1" unique_id=1666168195]
 mesh = SubResource("ArrayMesh_x1hlc")
+
+[node name="Cube_003" parent="." index="3" unique_id=1446102723]
+visible = false
