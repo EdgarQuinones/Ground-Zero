@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dw4aceq1wxk6n"
-path.s3tc="res://.godot/imported/Alien_Text_Colors_ForgePurple.png-fd28616c3b89256382a0217033ce8970.s3tc.ctex"
+path.s3tc="res://.godot/imported/Alien_Text_Colors_ForgePurple.png-044d354f37ee2ed5a785f14f93528f56.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Merge Assets/Map/Textures/Alien_Text_Colors_ForgePurple.png"
-dest_files=["res://.godot/imported/Alien_Text_Colors_ForgePurple.png-fd28616c3b89256382a0217033ce8970.s3tc.ctex"]
+source_file="res://Merge Assets/Map/textures/Alien_Text_Colors_ForgePurple.png"
+dest_files=["res://.godot/imported/Alien_Text_Colors_ForgePurple.png-044d354f37ee2ed5a785f14f93528f56.s3tc.ctex"]
 
 [params]
 

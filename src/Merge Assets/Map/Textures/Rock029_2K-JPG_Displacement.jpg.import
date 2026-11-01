@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ce2t1jspkfuco"
-path.s3tc="res://.godot/imported/Rock029_2K-JPG_Displacement.jpg-0121e5ac52852c3cbcadaaf667a1a337.s3tc.ctex"
+path.s3tc="res://.godot/imported/Rock029_2K-JPG_Displacement.jpg-a991cb81cdf8d209774e278339eff3a4.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Merge Assets/Map/Textures/Rock029_2K-JPG_Displacement.jpg"
-dest_files=["res://.godot/imported/Rock029_2K-JPG_Displacement.jpg-0121e5ac52852c3cbcadaaf667a1a337.s3tc.ctex"]
+source_file="res://Merge Assets/Map/textures/Rock029_2K-JPG_Displacement.jpg"
+dest_files=["res://.godot/imported/Rock029_2K-JPG_Displacement.jpg-a991cb81cdf8d209774e278339eff3a4.s3tc.ctex"]
 
 [params]
 
