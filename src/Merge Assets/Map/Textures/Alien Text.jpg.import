@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bn8fow1a5x8a5"
-path="res://.godot/imported/Alien Text.jpg-a1b2dea1317e42027bc083bc53f6e665.ctex"
+uid="uid://doi113xq5fyx7"
+path="res://.godot/imported/Alien Text.jpg-b2f966fcd97d3bcefaed889e50889ec4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Merge Assets/Map/textures/Alien Text.jpg"
-dest_files=["res://.godot/imported/Alien Text.jpg-a1b2dea1317e42027bc083bc53f6e665.ctex"]
+source_file="res://Merge Assets/Map/Textures/Alien Text.jpg"
+dest_files=["res://.godot/imported/Alien Text.jpg-b2f966fcd97d3bcefaed889e50889ec4.ctex"]
 
 [params]
 
